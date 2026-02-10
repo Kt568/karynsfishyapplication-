@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night Fishing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="#intro">Intro</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Hobbies</a>
+  </div>
+
+  <div class="scene">
+    <div class="stars"></div>
+
+    <div class="fisherman">
+      <img src="assets/fisherman.png" alt="Fisherman illustration">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="dots">
+      <a class="dot" href="#intro" data-target="intro"></a>
+      <a class="dot" href="#about" data-target="about"></a>
+      <a class="dot" href="#projects" data-target="projects"></a>
+      <a class="dot" href="#experience" data-target="experience"></a>
+    </div>
+
+    <div class="waterline"></div>
+    <button id="hookBtn" class="hook" type="button">↑</button>
+  </div>
+
+  <div class="content">
+
+    <div id="intro" class="card reveal">
+      <div class="label">Intro</div>
+      <h1>Hi, I’m Karyn.</h1>
+      <p>2nd year Interactive Design student.</p>
+    </div>
+
+    <div id="about" class="card reveal">
+      <div class="label">About</div>
+      <h2>What I’m into</h2>
+      <p>
+I’m exploring digital design from a creative art perspective. I love drawing, visual storytelling, and experimenting with creative 
+ideas. I’m currently developing more practical skills in UX/UI design and creative coding, and I’m especially drawn to designing
+thoughtful digital interaction experiences.
+      </p>
+      <div class="project">
+        <div class="project-title">Relevant coursework</div>
+        <button class="project-btn" type="button" data-project="coursework">View</button>
+
+        <div class="project-preview" id="project-coursework">
+          <ul class="coursework-list">
+            <li>Design Process and Methods</li>
+            <li>Design Programming</li>
+            <li>Visual Communication</li>
+            <li>Introduction to Web Design</li>
+            <li>Introduction to Interface Design</li>
+            <li>Design Theory and Culture</li>
+            <li>Introduction to Programming</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="card reveal">
+      <div class="label">Projects</div>
+      <h2>Things I’ve made</h2>
+
+      <div class="project">
+        <div class="project-title">Mini ocean game (p5)</div>
+        <button class="project-btn" type="button" data-project="ocean">Play demo</button>
+
+        <div class="project-preview" id="project-ocean">
+          <iframe
+            src="games/ocean/index.html"
+            title="Mini Ocean Game"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-title">Environment poster</div>
+        <button class="project-btn" type="button" data-project="poster">View poster</button>
+
+        <div class="project-preview" id="project-poster">
+          <img
+            src="assets/environment-poster.jpg"
+            alt="Environment poster"
+            class="poster-img"
+            loading="lazy">
+        </div>
+      </div>
+
+<div class="project">
+  <div class="project-title">Mobile app prototype (Figma)</div>
+  <button class="project-btn" type="button" data-project="app">
+    View prototype preview
+  </button>
+
+  <div class="project-preview" id="project-app">
+
+    <div class="app-previews">
+      <img src="assets/app-01.jpg" alt="App home screen">
+      <img src="assets/app-02.jpg" alt="App main flow">
+      <img src="assets/app-03.jpg" alt="App result screen">
+    </div>
+
+<a
+  class="project-btn project-btn-link"
+  href="https://www.figma.com/proto/adWMH1ONAYwEqQCheUEfJ5/Untitled?node-id=0-1&t=eH7WxbRFPCsJQIdu-1"
+  target="_blank"
+  rel="noopener">
+  Open in Figma
+</a>
+
+
+  </div>
+</div>
+</div>
+
+    <div id="experience" class="card reveal">
+      <div class="label">Hobbies</div>
+      <h2>Skills / interests</h2>
+      <p>
+        I enjoy experimenting with art and visual ideas. Give me a concept and I'll create it.
+        Outside of design, I’m interested in jazz and classical music, and I find a lot of inspiration in aquariums and nature.
+      </p>
+    </div>
+
+    <div class="end reveal">
+      <div class="endlabel">END OF THE LINE</div>
+      <p class="endtext">You made it to the bottom. Click the hook to return to the surface.</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
